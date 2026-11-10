@@ -1,0 +1,743 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio JavaScript</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Laboratorio completo de JavaScript</h1>
+        <p>Aprende programación con ejemplos prácticos.</p>
+        <hr>
+    </header>
+
+    <main>
+
+        <!-- 1. VARIABLES -->
+
+        <section>
+            <h2>1. Variables</h2>
+
+            <p>
+                Las variables permiten almacenar información.
+            </p>
+
+            <pre>
+let nombre = "Luis";
+const edad = 34;
+var ciudad = "Santo Domingo";
+            </pre>
+
+            <button onclick="mostrarVariables()">
+                Ejecutar ejemplo
+            </button>
+
+            <p id="resultadoVariables"></p>
+        </section>
+
+        <hr>
+
+        <!-- 2. TIPOS DE DATOS -->
+
+        <section>
+            <h2>2. Tipos de datos</h2>
+
+            <ul>
+                <li>String: texto.</li>
+                <li>Number: números.</li>
+                <li>Boolean: verdadero o falso.</li>
+                <li>Array: listas de datos.</li>
+                <li>Object: objetos.</li>
+                <li>Null: ausencia intencional de valor.</li>
+                <li>Undefined: valor no definido.</li>
+            </ul>
+
+            <button onclick="mostrarTipos()">
+                Ver tipos de datos
+            </button>
+
+            <p id="resultadoTipos"></p>
+        </section>
+
+        <hr>
+
+        <!-- 3. OPERADORES -->
+
+        <section>
+            <h2>3. Operadores matemáticos</h2>
+
+            <p>Introduce dos números:</p>
+
+            <input type="number" id="numero1" placeholder="Número 1">
+            <input type="number" id="numero2" placeholder="Número 2">
+
+            <button onclick="calcular()">
+                Calcular
+            </button>
+
+            <p id="resultadoOperadores"></p>
+        </section>
+
+        <hr>
+
+        <!-- 4. CONDICIONES -->
+
+        <section>
+            <h2>4. Condicionales IF / ELSE</h2>
+
+            <p>Comprueba si una persona es mayor de edad.</p>
+
+            <input type="number" id="edad" placeholder="Introduce tu edad">
+
+            <button onclick="validarEdad()">
+                Validar edad
+            </button>
+
+            <p id="resultadoEdad"></p>
+        </section>
+
+        <hr>
+
+        <!-- 5. SWITCH -->
+
+        <section>
+            <h2>5. Switch</h2>
+
+            <p>Selecciona un día de la semana:</p>
+
+            <select id="dia">
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miércoles</option>
+                <option value="4">Jueves</option>
+                <option value="5">Viernes</option>
+            </select>
+
+            <button onclick="mostrarDia()">
+                Consultar
+            </button>
+
+            <p id="resultadoDia"></p>
+        </section>
+
+        <hr>
+
+        <!-- 6. CICLOS -->
+
+        <section>
+            <h2>6. Ciclos (Loops)</h2>
+
+            <p>
+                For, while y do...while permiten repetir instrucciones.
+            </p>
+
+            <button onclick="ejecutarCiclo()">
+                Ejecutar ciclo FOR
+            </button>
+
+            <p id="resultadoCiclo"></p>
+        </section>
+
+        <hr>
+
+        <!-- 7. FUNCIONES -->
+
+        <section>
+            <h2>7. Funciones</h2>
+
+            <p>
+                Las funciones permiten reutilizar código.
+            </p>
+
+            <button onclick="saludar()">
+                Ejecutar función
+            </button>
+
+            <p id="resultadoFuncion"></p>
+        </section>
+
+        <hr>
+
+        <!-- 8. ARRAYS -->
+
+        <section>
+            <h2>8. Arrays (Arreglos)</h2>
+
+            <p>Ejemplo de lista de tecnologías:</p>
+
+            <button onclick="mostrarArray()">
+                Mostrar tecnologías
+            </button>
+
+            <p id="resultadoArray"></p>
+        </section>
+
+        <hr>
+
+        <!-- 9. OBJETOS -->
+
+        <section>
+            <h2>9. Objetos</h2>
+
+            <p>
+                Los objetos permiten almacenar información
+                relacionada mediante propiedades y valores.
+            </p>
+
+            <button onclick="mostrarObjeto()">
+                Mostrar objeto
+            </button>
+
+            <p id="resultadoObjeto"></p>
+        </section>
+
+        <hr>
+
+        <!-- 10. DOM -->
+
+        <section>
+            <h2>10. DOM (Document Object Model)</h2>
+
+            <p>
+                DOM permite acceder y modificar los elementos HTML.
+            </p>
+
+            <p id="textoDOM">
+                Este texto será modificado con JavaScript.
+            </p>
+
+            <button onclick="modificarDOM()">
+                Modificar contenido
+            </button>
+        </section>
+
+        <hr>
+
+        <!-- 11. EVENTOS -->
+
+        <section>
+            <h2>11. Eventos</h2>
+
+            <p>
+                Los eventos detectan acciones del usuario.
+            </p>
+
+            <button id="botonEvento">
+                Haz clic aquí
+            </button>
+
+            <p id="resultadoEvento"></p>
+        </section>
+
+        <hr>
+
+        <!-- 12. VALIDACIONES -->
+
+        <section>
+            <h2>12. Validación de formularios</h2>
+
+            <form id="formulario">
+
+                <label for="nombreUsuario">Nombre:</label>
+
+                <input
+                    type="text"
+                    id="nombreUsuario"
+                    required
+                    minlength="3"
+                >
+
+                <br><br>
+
+                <label for="correoUsuario">Correo:</label>
+
+                <input
+                    type="email"
+                    id="correoUsuario"
+                    required
+                >
+
+                <br><br>
+
+                <button type="submit">
+                    Validar formulario
+                </button>
+
+            </form>
+
+            <p id="resultadoFormulario"></p>
+        </section>
+
+        <hr>
+
+        <!-- 13. LOCAL STORAGE -->
+
+        <section>
+            <h2>13. Local Storage</h2>
+
+            <p>
+                Permite guardar información en el navegador
+                para recuperarla posteriormente.
+            </p>
+
+            <input
+                type="text"
+                id="nota"
+                placeholder="Escribe una nota"
+            >
+
+            <button onclick="guardarNota()">
+                Guardar nota
+            </button>
+
+            <button onclick="leerNota()">
+                Leer nota
+            </button>
+
+            <button onclick="eliminarNota()">
+                Eliminar nota
+            </button>
+
+            <p id="resultadoNota"></p>
+        </section>
+
+        <hr>
+
+        <!-- 14. FECHAS -->
+
+        <section>
+            <h2>14. Fechas y horas</h2>
+
+            <button onclick="mostrarFecha()">
+                Mostrar fecha actual
+            </button>
+
+            <p id="resultadoFecha"></p>
+        </section>
+
+        <hr>
+
+        <!-- 15. MATH -->
+
+        <section>
+            <h2>15. Objeto Math</h2>
+
+            <button onclick="generarNumero()">
+                Generar número aleatorio
+            </button>
+
+            <p id="resultadoMath"></p>
+        </section>
+
+        <hr>
+
+        <!-- 16. JSON -->
+
+        <section>
+            <h2>16. JSON</h2>
+
+            <p>
+                JSON permite representar e intercambiar información
+                estructurada.
+            </p>
+
+            <button onclick="mostrarJSON()">
+                Convertir a JSON
+            </button>
+
+            <pre id="resultadoJSON"></pre>
+        </section>
+
+        <hr>
+
+        <!-- 17. ASINCRONÍA -->
+
+        <section>
+            <h2>17. Programación asíncrona</h2>
+
+            <p>
+                Promise y async/await permiten trabajar
+                con operaciones que tardan en completarse.
+            </p>
+
+            <button onclick="ejecutarAsync()">
+                Ejecutar ejemplo
+            </button>
+
+            <p id="resultadoAsync"></p>
+        </section>
+
+        <hr>
+
+        <!-- 18. FETCH -->
+
+        <section>
+            <h2>18. Fetch API</h2>
+
+            <p>
+                Fetch permite solicitar información a una API.
+            </p>
+
+            <button onclick="consultarAPI()">
+                Consultar API de prueba
+            </button>
+
+            <pre id="resultadoAPI"></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Fin del laboratorio JavaScript.</p>
+    </footer>
+
+
+    <!-- ==================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script>
+
+        // 1. VARIABLES
+
+        function mostrarVariables() {
+
+            let nombre = "Luis";
+            const edad = 34;
+            var ciudad = "Santo Domingo";
+
+            document.getElementById("resultadoVariables").textContent =
+                `Nombre: ${nombre}, Edad: ${edad}, Ciudad: ${ciudad}`;
+        }
+
+
+        // 2. TIPOS DE DATOS
+
+        function mostrarTipos() {
+
+            let texto = "JavaScript";
+            let numero = 100;
+            let activo = true;
+            let lista = ["HTML", "CSS", "JS"];
+            let usuario = { nombre: "Luis" };
+
+            document.getElementById("resultadoTipos").textContent =
+                `String: ${typeof texto} | Number: ${typeof numero} |
+                Boolean: ${typeof activo} | Array: ${Array.isArray(lista)} |
+                Object: ${typeof usuario}`;
+        }
+
+
+        // 3. OPERADORES
+
+        function calcular() {
+
+            let n1 = Number(document.getElementById("numero1").value);
+            let n2 = Number(document.getElementById("numero2").value);
+
+            if (
+                document.getElementById("numero1").value === "" ||
+                document.getElementById("numero2").value === ""
+            ) {
+                document.getElementById("resultadoOperadores").textContent =
+                    "Introduce ambos números.";
+                return;
+            }
+
+            document.getElementById("resultadoOperadores").textContent =
+                `Suma: ${n1 + n2} | Resta: ${n1 - n2} |
+                Multiplicación: ${n1 * n2} |
+                División: ${n2 !== 0 ? n1 / n2 : "No se puede dividir entre cero"}`;
+        }
+
+
+        // 4. IF / ELSE
+
+        function validarEdad() {
+
+            let edad = Number(document.getElementById("edad").value);
+
+            let resultado = document.getElementById("resultadoEdad");
+
+            if (document.getElementById("edad").value === "") {
+                resultado.textContent = "Introduce una edad.";
+            } else if (edad < 0) {
+                resultado.textContent = "La edad no puede ser negativa.";
+            } else if (edad >= 18) {
+                resultado.textContent = "Eres mayor de edad.";
+            } else {
+                resultado.textContent = "Eres menor de edad.";
+            }
+        }
+
+
+        // 5. SWITCH
+
+        function mostrarDia() {
+
+            let dia = Number(document.getElementById("dia").value);
+
+            let nombreDia;
+
+            switch (dia) {
+
+                case 1:
+                    nombreDia = "Lunes";
+                    break;
+
+                case 2:
+                    nombreDia = "Martes";
+                    break;
+
+                case 3:
+                    nombreDia = "Miércoles";
+                    break;
+
+                case 4:
+                    nombreDia = "Jueves";
+                    break;
+
+                case 5:
+                    nombreDia = "Viernes";
+                    break;
+
+                default:
+                    nombreDia = "Día no válido";
+            }
+
+            document.getElementById("resultadoDia").textContent =
+                nombreDia;
+        }
+
+
+        // 6. CICLOS
+
+        function ejecutarCiclo() {
+
+            let resultado = "";
+
+            for (let i = 1; i <= 5; i++) {
+
+                resultado += `Número: ${i} | `;
+            }
+
+            document.getElementById("resultadoCiclo").textContent =
+                resultado;
+        }
+
+
+        // 7. FUNCIONES
+
+        function saludar() {
+
+            document.getElementById("resultadoFuncion").textContent =
+                "¡Hola! Bienvenido al mundo de JavaScript.";
+        }
+
+
+        // 8. ARRAYS
+
+        function mostrarArray() {
+
+            let tecnologias = ["HTML", "CSS", "JavaScript", "Python"];
+
+            // Agregar elemento
+            tecnologias.push("SQL");
+
+            // Eliminar último elemento
+            // tecnologias.pop();
+
+            document.getElementById("resultadoArray").textContent =
+                tecnologias.join(" - ");
+        }
+
+
+        // 9. OBJETOS
+
+        function mostrarObjeto() {
+
+            let usuario = {
+                nombre: "Luis",
+                profesion: "Desarrollador Web",
+                experiencia: 14
+            };
+
+            document.getElementById("resultadoObjeto").textContent =
+                `Nombre: ${usuario.nombre} |
+                Profesión: ${usuario.profesion} |
+                Experiencia: ${usuario.experiencia} años`;
+        }
+
+
+        // 10. DOM
+
+        function modificarDOM() {
+
+            let elemento = document.getElementById("textoDOM");
+
+            elemento.textContent =
+                "¡El contenido fue modificado utilizando JavaScript!";
+        }
+
+
+        // 11. EVENTOS
+
+        document.getElementById("botonEvento").addEventListener(
+            "click",
+            function () {
+
+                document.getElementById("resultadoEvento").textContent =
+                    "Evento click ejecutado correctamente.";
+
+            }
+        );
+
+
+        // 12. VALIDACIÓN DE FORMULARIOS
+
+        document.getElementById("formulario").addEventListener(
+            "submit",
+            function (evento) {
+
+                evento.preventDefault();
+
+                let nombre =
+                    document.getElementById("nombreUsuario").value;
+
+                document.getElementById("resultadoFormulario").textContent =
+                    `Formulario validado. Bienvenido, ${nombre}.`;
+
+            }
+        );
+
+
+        // 13. LOCAL STORAGE
+
+        function guardarNota() {
+
+            let nota = document.getElementById("nota").value;
+
+            if (!nota.trim()) {
+                document.getElementById("resultadoNota").textContent =
+                    "Escribe una nota antes de guardar.";
+                return;
+            }
+
+            localStorage.setItem("miNota", nota);
+
+            document.getElementById("resultadoNota").textContent =
+                "Nota guardada correctamente.";
+        }
+
+
+        function leerNota() {
+
+            let nota = localStorage.getItem("miNota");
+
+            document.getElementById("resultadoNota").textContent =
+                nota ?? "No existe ninguna nota guardada.";
+        }
+
+
+        function eliminarNota() {
+
+            localStorage.removeItem("miNota");
+
+            document.getElementById("resultadoNota").textContent =
+                "Nota eliminada.";
+        }
+
+
+        // 14. FECHAS
+
+        function mostrarFecha() {
+
+            let fecha = new Date();
+
+            document.getElementById("resultadoFecha").textContent =
+                fecha.toLocaleString("es-DO");
+        }
+
+
+        // 15. MATH
+
+        function generarNumero() {
+
+            let numero = Math.floor(Math.random() * 100) + 1;
+
+            document.getElementById("resultadoMath").textContent =
+                `Número generado: ${numero}`;
+        }
+
+
+        // 16. JSON
+
+        function mostrarJSON() {
+
+            let usuario = {
+                nombre: "Luis",
+                lenguaje: "JavaScript",
+                activo: true
+            };
+
+            let json = JSON.stringify(usuario, null, 2);
+
+            document.getElementById("resultadoJSON").textContent = json;
+        }
+
+
+        // 17. ASYNC / AWAIT
+
+        async function ejecutarAsync() {
+
+            document.getElementById("resultadoAsync").textContent =
+                "Procesando...";
+
+            await new Promise(resolve => setTimeout(resolve, 1500));
+
+            document.getElementById("resultadoAsync").textContent =
+                "Proceso asíncrono completado.";
+        }
+
+
+        // 18. FETCH API
+
+        async function consultarAPI() {
+
+            let resultado = document.getElementById("resultadoAPI");
+
+            resultado.textContent = "Consultando información...";
+
+            try {
+
+                let respuesta = await fetch(
+                    "https://jsonplaceholder.typicode.com/users/1"
+                );
+
+                if (!respuesta.ok) {
+                    throw new Error("Error al consultar la API");
+                }
+
+                let usuario = await respuesta.json();
+
+                resultado.textContent =
+                    JSON.stringify(usuario, null, 2);
+
+            } catch (error) {
+
+                resultado.textContent =
+                    "No fue posible consultar la API: " + error.message;
+
+            }
+        }
+
+    </script>
+
+</body>
+</html>
