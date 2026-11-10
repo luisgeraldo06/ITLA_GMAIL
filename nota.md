@@ -1,1 +1,1 @@
-DESDE Visual Studio Code
+Desde Visual Studio Code

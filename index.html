@@ -1,1 +1,1100 @@
-<h1>DESDE GITHUB LUIS</h1>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- CONFIGURACIÓN GENERAL DEL DOCUMENTO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TÍTULO Y DESCRIPCIÓN PARA BUSCADORES -->
+    <title>Guía completa de HTML5</title>
+    <meta name="description" content="Guía educativa de etiquetas y funcionalidades HTML5">
+    <meta name="author" content="Guía de aprendizaje HTML">
+
+    <!-- ICONO DE LA PÁGINA -->
+    <link rel="icon" href="https://www.w3.org/html/logo/downloads/HTML5_Logo_32.png">
+
+</head>
+
+<body>
+
+    <!-- ================================================== -->
+    <!-- 1. ENCABEZADO PRINCIPAL -->
+    <!-- ================================================== -->
+
+    <header id="inicio">
+
+        <h1>Guía completa de HTML5</h1>
+
+        <p>
+            Aprende las etiquetas, atributos y funcionalidades
+            fundamentales de HTML.
+        </p>
+
+        <!-- NAVEGACIÓN -->
+        <nav aria-label="Navegación principal">
+
+            <a href="#textos">Textos</a> |
+            <a href="#listas">Listas</a> |
+            <a href="#enlaces">Enlaces</a> |
+            <a href="#imagenes">Imágenes</a> |
+            <a href="#tablas">Tablas</a> |
+            <a href="#formularios">Formularios</a> |
+            <a href="#multimedia">Multimedia</a> |
+            <a href="#semantica">HTML semántico</a> |
+            <a href="#atributos">Atributos</a>
+
+        </nav>
+
+        <hr>
+
+    </header>
+
+
+    <!-- ================================================== -->
+    <!-- 2. CONTENIDO PRINCIPAL -->
+    <!-- ================================================== -->
+
+    <main>
+
+        <!-- SECCIÓN 1: ENCABEZADOS Y TEXTOS -->
+
+        <section id="textos">
+
+            <h2>1. Encabezados y textos</h2>
+
+            <p>
+                HTML permite organizar el contenido mediante
+                encabezados, párrafos y etiquetas de formato.
+            </p>
+
+            <h1>Encabezado H1</h1>
+            <p>Es el encabezado principal de una página.</p>
+
+            <h2>Encabezado H2</h2>
+            <p>Se utiliza para dividir las secciones principales.</p>
+
+            <h3>Encabezado H3</h3>
+            <p>Se utiliza para subsecciones.</p>
+
+            <h4>Encabezado H4</h4>
+            <h5>Encabezado H5</h5>
+            <h6>Encabezado H6</h6>
+
+            <hr>
+
+            <h3>Etiquetas de formato de texto</h3>
+
+            <p><b>b:</b> Texto en negrita sin importancia semántica adicional.</p>
+
+            <p><strong>strong:</strong> Texto con importancia especial.</p>
+
+            <p><i>i:</i> Texto en cursiva.</p>
+
+            <p><em>em:</em> Texto con énfasis.</p>
+
+            <p><u>u:</u> Texto subrayado.</p>
+
+            <p><mark>mark:</mark> Texto resaltado.</p>
+
+            <p><small>small:</small> Texto de menor tamaño.</p>
+
+            <p><del>del:</del> Texto eliminado.</p>
+
+            <p><ins>ins:</ins> Texto insertado.</p>
+
+            <p><s>s:</s> Texto que ya no es válido o relevante.</p>
+
+            <p>H<sub>2</sub>O: subíndice.</p>
+
+            <p>2<sup>3</sup>: superíndice.</p>
+
+            <p><abbr title="HyperText Markup Language">HTML</abbr>: abreviatura.</p>
+
+            <p>
+                <q>El aprendizaje constante es importante.</q>
+                Etiqueta para citas cortas.
+            </p>
+
+            <blockquote cite="https://www.w3.org/">
+                Ejemplo de una cita extensa o bloque de texto citado.
+            </blockquote>
+
+            <p>
+                <code>console.log("Hola mundo");</code>
+                Representa código de computadora.
+            </p>
+
+            <pre>
+Este texto conserva
+los espacios
+y los saltos de línea.
+            </pre>
+
+            <p>
+                <kbd>Ctrl</kbd> + <kbd>C</kbd>:
+                representa una combinación de teclas.
+            </p>
+
+            <p>
+                <var>x</var> + <var>y</var>:
+                representa variables.
+            </p>
+
+            <p>
+                <time datetime="2026-11-10">
+                    10 de noviembre de 2026
+                </time>
+                : representa fechas y horas.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 2: LISTAS -->
+
+        <section id="listas">
+
+            <h2>2. Listas HTML</h2>
+
+            <p>
+                Las listas permiten organizar información
+                mediante elementos ordenados o desordenados.
+            </p>
+
+            <h3>Lista desordenada (ul)</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+
+            <h3>Lista ordenada (ol)</h3>
+
+            <ol>
+                <li>Crear el documento HTML.</li>
+                <li>Agregar contenido.</li>
+                <li>Validar el código.</li>
+                <li>Publicar la página.</li>
+            </ol>
+
+            <h3>Lista ordenada con diferentes atributos</h3>
+
+            <ol type="A" start="3">
+                <li>Frontend</li>
+                <li>Backend</li>
+                <li>Base de datos</li>
+            </ol>
+
+            <h3>Lista de definiciones (dl)</h3>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para estructurar páginas web.</dd>
+
+                <dt>CSS</dt>
+                <dd>Lenguaje utilizado para diseñar páginas web.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Lenguaje de programación para agregar interactividad.</dd>
+            </dl>
+
+            <h3>Lista anidada</h3>
+
+            <ul>
+                <li>Desarrollo Web
+                    <ul>
+                        <li>Frontend</li>
+                        <li>Backend</li>
+                        <li>Full Stack</li>
+                    </ul>
+                </li>
+                <li>Desarrollo Mobile</li>
+            </ul>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 3: ENLACES -->
+
+        <section id="enlaces">
+
+            <h2>3. Enlaces e hipervínculos</h2>
+
+            <p>
+                La etiqueta a permite navegar hacia otras páginas,
+                documentos o secciones del mismo sitio.
+            </p>
+
+            <h3>Enlace externo</h3>
+
+            <a href="https://www.google.com">
+                Abrir Google
+            </a>
+
+            <h3>Enlace en una nueva pestaña</h3>
+
+            <a href="https://github.com"
+               target="_blank"
+               rel="noopener noreferrer">
+                Abrir GitHub
+            </a>
+
+            <h3>Enlace interno</h3>
+
+            <a href="#inicio">
+                Volver al inicio de la página
+            </a>
+
+            <h3>Enlace de correo electrónico</h3>
+
+            <a href="mailto:contacto@ejemplo.com">
+                Enviar correo
+            </a>
+
+            <h3>Enlace telefónico</h3>
+
+            <a href="tel:+18095551234">
+                Llamar por teléfono
+            </a>
+
+            <h3>Descargar un archivo</h3>
+
+            <a href="documento.pdf" download>
+                Descargar documento PDF
+            </a>
+
+            <p>
+                Nota: el archivo documento.pdf debe existir
+                en la ubicación indicada.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 4: IMÁGENES -->
+
+        <section id="imagenes">
+
+            <h2>4. Imágenes y figuras</h2>
+
+            <p>
+                La etiqueta img permite insertar imágenes
+                dentro de un documento HTML.
+            </p>
+
+            <h3>Imagen básica</h3>
+
+            <img
+                src="https://placehold.co/400x200"
+                alt="Imagen de ejemplo"
+                width="400"
+                height="200"
+            >
+
+            <h3>Figura con descripción</h3>
+
+            <figure>
+
+                <img
+                    src="https://placehold.co/400x200/eeeeee/333333"
+                    alt="Ejemplo de una imagen para HTML"
+                    width="400"
+                    height="200"
+                >
+
+                <figcaption>
+                    Figcaption: descripción o pie de una imagen.
+                </figcaption>
+
+            </figure>
+
+            <h3>Imagen adaptable con picture</h3>
+
+            <picture>
+
+                <source
+                    media="(max-width: 600px)"
+                    srcset="https://placehold.co/300x200"
+                >
+
+                <img
+                    src="https://placehold.co/600x300"
+                    alt="Imagen adaptable"
+                    width="600"
+                >
+
+            </picture>
+
+            <p>
+                Picture permite seleccionar diferentes imágenes
+                según las condiciones del dispositivo.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 5: TABLAS -->
+
+        <section id="tablas">
+
+            <h2>5. Tablas HTML</h2>
+
+            <p>
+                Las tablas permiten presentar información
+                organizada en filas y columnas.
+            </p>
+
+            <table border="1">
+
+                <caption>Ejemplo de inventario tecnológico</caption>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Equipo</th>
+                        <th>Marca</th>
+                        <th>Estado</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>001</td>
+                        <td>Servidor</td>
+                        <td>Dell</td>
+                        <td>Activo</td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>Switch</td>
+                        <td>Cisco</td>
+                        <td>Activo</td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>Firewall</td>
+                        <td>Fortinet</td>
+                        <td>Activo</td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+
+                    <tr>
+                        <td colspan="3">Total de equipos</td>
+                        <td>3</td>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+            <h3>Combinar columnas</h3>
+
+            <table border="1">
+
+                <tr>
+                    <th colspan="2">Información del usuario</th>
+                </tr>
+
+                <tr>
+                    <td>Nombre</td>
+                    <td>Juan Pérez</td>
+                </tr>
+
+            </table>
+
+            <h3>Combinar filas</h3>
+
+            <table border="1">
+
+                <tr>
+                    <th rowspan="2">Departamento</th>
+                    <td>Tecnología</td>
+                </tr>
+
+                <tr>
+                    <td>Infraestructura</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 6: FORMULARIOS -->
+
+        <section id="formularios">
+
+            <h2>6. Formularios HTML</h2>
+
+            <p>
+                Los formularios permiten recopilar información
+                introducida por los usuarios.
+            </p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+
+                    <legend>Información personal</legend>
+
+                    <p>
+                        <label for="nombre">Nombre:</label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            required
+                            minlength="3"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="apellido">Apellido:</label>
+
+                        <input
+                            type="text"
+                            id="apellido"
+                            name="apellido"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Correo electrónico:</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="correo@ejemplo.com"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="password">Contraseña:</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            minlength="8"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                        >
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Tipos de campos</legend>
+
+                    <p>
+                        <label for="numero">Número:</label>
+                        <input type="number" id="numero" name="numero"
+                               min="1" max="100">
+                    </p>
+
+                    <p>
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </p>
+
+                    <p>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora">
+                    </p>
+
+                    <p>
+                        <label for="mes">Mes:</label>
+                        <input type="month" id="mes" name="mes">
+                    </p>
+
+                    <p>
+                        <label for="semana">Semana:</label>
+                        <input type="week" id="semana" name="semana">
+                    </p>
+
+                    <p>
+                        <label for="fecha_hora">Fecha y hora:</label>
+                        <input type="datetime-local"
+                               id="fecha_hora"
+                               name="fecha_hora">
+                    </p>
+
+                    <p>
+                        <label for="color">Seleccionar color:</label>
+                        <input type="color" id="color" name="color">
+                    </p>
+
+                    <p>
+                        <label for="rango">Nivel de experiencia:</label>
+                        <input type="range" id="rango" name="rango"
+                               min="0" max="10">
+                    </p>
+
+                    <p>
+                        <label for="busqueda">Buscar:</label>
+                        <input type="search" id="busqueda"
+                               name="busqueda">
+                    </p>
+
+                    <p>
+                        <label for="archivo">Subir archivo:</label>
+                        <input type="file" id="archivo" name="archivo">
+                    </p>
+
+                    <p>
+                        <label for="oculto">Campo oculto:</label>
+                        <input type="hidden" name="origen"
+                               value="formulario-web">
+                        <small>El campo hidden no se muestra al usuario.</small>
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Selección de opciones</legend>
+
+                    <p>Lenguaje favorito:</p>
+
+                    <input type="radio" id="html" name="lenguaje"
+                           value="HTML">
+                    <label for="html">HTML</label>
+
+                    <input type="radio" id="css" name="lenguaje"
+                           value="CSS">
+                    <label for="css">CSS</label>
+
+                    <input type="radio" id="js" name="lenguaje"
+                           value="JavaScript">
+                    <label for="js">JavaScript</label>
+
+                    <p>Conocimientos:</p>
+
+                    <input type="checkbox" id="frontend"
+                           name="conocimientos" value="Frontend">
+                    <label for="frontend">Frontend</label>
+
+                    <input type="checkbox" id="backend"
+                           name="conocimientos" value="Backend">
+                    <label for="backend">Backend</label>
+
+                    <p>
+                        <label for="pais">País:</label>
+
+                        <select id="pais" name="pais">
+
+                            <option value="">Selecciona un país</option>
+                            <option value="rd">República Dominicana</option>
+                            <option value="usa">Estados Unidos</option>
+                            <option value="espana">España</option>
+
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="tecnologia">Tecnología:</label>
+
+                        <input list="tecnologias"
+                               id="tecnologia"
+                               name="tecnologia">
+
+                        <datalist id="tecnologias">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Python">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="comentario">Comentarios:</label>
+                    </p>
+
+                    <textarea
+                        id="comentario"
+                        name="comentario"
+                        rows="5"
+                        cols="40"
+                        placeholder="Escribe tus comentarios">
+                    </textarea>
+
+                </fieldset>
+
+
+                <p>
+                    <button type="submit">Enviar formulario</button>
+
+                    <button type="reset">Limpiar formulario</button>
+
+                    <button type="button">
+                        Botón sin acción programada
+                    </button>
+                </p>
+
+            </form>
+
+            <p>
+                IMPORTANTE: este formulario es demostrativo.
+                No guarda información en una base de datos.
+                El envío utiliza el método GET hacia esta misma página.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 7: MULTIMEDIA -->
+
+        <section id="multimedia">
+
+            <h2>7. Contenido multimedia</h2>
+
+            <h3>Audio</h3>
+
+            <p>
+                Audio permite reproducir archivos de sonido.
+            </p>
+
+            <audio controls>
+                <source
+                    src="https://www.w3schools.com/html/horse.mp3"
+                    type="audio/mpeg"
+                >
+                Tu navegador no soporta audio HTML5.
+            </audio>
+
+            <h3>Video</h3>
+
+            <p>
+                Video permite reproducir archivos audiovisuales.
+            </p>
+
+            <video width="400" controls>
+
+                <source
+                    src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    type="video/mp4"
+                >
+
+                Tu navegador no soporta video HTML5.
+
+            </video>
+
+            <h3>Iframe</h3>
+
+            <p>
+                Iframe permite insertar contenido de otras páginas
+                dentro de nuestro documento.
+            </p>
+
+            <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-70.0%2C18.3%2C-69.8%2C18.6"
+                width="400"
+                height="250"
+                title="Mapa de ejemplo">
+            </iframe>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 8: ELEMENTOS SEMÁNTICOS -->
+
+        <section id="semantica">
+
+            <h2>8. Etiquetas semánticas HTML5</h2>
+
+            <p>
+                Las etiquetas semánticas describen el significado
+                y la función de cada parte de una página web.
+            </p>
+
+            <article>
+
+                <h3>article</h3>
+
+                <p>
+                    Representa contenido independiente,
+                    como una noticia, publicación o artículo.
+                </p>
+
+            </article>
+
+            <aside>
+
+                <h3>aside</h3>
+
+                <p>
+                    Representa contenido complementario,
+                    como una barra lateral o información relacionada.
+                </p>
+
+            </aside>
+
+            <h3>details y summary</h3>
+
+            <details>
+
+                <summary>¿Qué es HTML?</summary>
+
+                <p>
+                    HTML es un lenguaje de marcado utilizado
+                    para estructurar el contenido de una página web.
+                </p>
+
+            </details>
+
+            <details open>
+
+                <summary>¿Qué es HTML5?</summary>
+
+                <p>
+                    Es la versión moderna del estándar HTML,
+                    con elementos semánticos y capacidades multimedia.
+                </p>
+
+            </details>
+
+            <h3>address</h3>
+
+            <address>
+                Contacto: contacto@ejemplo.com
+                <br>
+                Santo Domingo, República Dominicana.
+            </address>
+
+            <h3>progress</h3>
+
+            <p>Progreso de aprendizaje:</p>
+
+            <progress value="70" max="100">70%</progress>
+
+            <h3>meter</h3>
+
+            <p>Nivel de almacenamiento utilizado:</p>
+
+            <meter value="75" min="0" max="100">75%</meter>
+
+            <h3>dialog</h3>
+
+            <dialog open>
+                Este es un cuadro de diálogo HTML abierto.
+                Sin JavaScript no incluye controles programados
+                para abrirlo o cerrarlo dinámicamente.
+            </dialog>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 9: ATRIBUTOS -->
+
+        <section id="atributos">
+
+            <h2>9. Atributos HTML</h2>
+
+            <p>
+                Los atributos agregan propiedades y configuraciones
+                a los elementos HTML.
+            </p>
+
+            <h3>id</h3>
+
+            <p id="identificador">
+                Identifica de manera única un elemento dentro del documento.
+            </p>
+
+            <h3>class</h3>
+
+            <p class="ejemplo">
+                Permite agrupar elementos para aplicar estilos
+                o seleccionarlos desde JavaScript.
+            </p>
+
+            <h3>title</h3>
+
+            <p title="Información adicional">
+                Coloca el cursor sobre este texto para ver
+                información adicional en algunos navegadores.
+            </p>
+
+            <h3>contenteditable</h3>
+
+            <p contenteditable="true">
+                Puedes hacer clic aquí y modificar este texto.
+            </p>
+
+            <h3>hidden</h3>
+
+            <p hidden>
+                Este contenido está oculto.
+            </p>
+
+            <h3>dir</h3>
+
+            <p dir="rtl">
+                Este texto se muestra de derecha a izquierda.
+            </p>
+
+            <h3>lang</h3>
+
+            <p lang="en">
+                This paragraph is written in English.
+            </p>
+
+            <h3>spellcheck</h3>
+
+            <textarea spellcheck="true" rows="3" cols="40">
+Escribe aquí para probar la revisión ortográfica.
+            </textarea>
+
+            <h3>draggable</h3>
+
+            <p draggable="true">
+                Este elemento puede ser arrastrable.
+                Para implementar un comportamiento completo de arrastrar
+                y soltar se necesita JavaScript.
+            </p>
+
+            <h3>download</h3>
+
+            <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+               download>
+                Ejemplo de atributo download.
+            </a>
+
+            <h3>required</h3>
+
+            <input type="text" required
+                   placeholder="Este campo es obligatorio">
+
+            <h3>readonly</h3>
+
+            <input type="text" value="Solo lectura" readonly>
+
+            <h3>disabled</h3>
+
+            <input type="text" value="Campo deshabilitado" disabled>
+
+            <h3>maxlength</h3>
+
+            <input type="text" maxlength="10"
+                   placeholder="Máximo 10 caracteres">
+
+            <h3>placeholder</h3>
+
+            <input type="text"
+                   placeholder="Escribe tu nombre">
+
+            <h3>autofocus</h3>
+
+            <p>
+                El atributo autofocus enfoca automáticamente
+                un campo al cargar el documento.
+                Se omite aquí para no interrumpir la navegación.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 10: ELEMENTOS ADICIONALES -->
+
+        <section>
+
+            <h2>10. Otros elementos HTML</h2>
+
+            <h3>Separador horizontal</h3>
+
+            <hr>
+
+            <h3>Salto de línea</h3>
+
+            Primera línea.<br>
+            Segunda línea.
+
+            <h3>Word break</h3>
+
+            <p>
+                Supercalifragilistico<wbr>expialidoso.
+            </p>
+
+            <h3>Ruby: anotaciones de pronunciación</h3>
+
+            <p>
+                <ruby>
+                    漢 <rt>kan</rt>
+                    字 <rt>ji</rt>
+                </ruby>
+            </p>
+
+            <h3>Bidirectional isolation</h3>
+
+            <p>
+                Usuario:
+                <bdi>user123</bdi>
+            </p>
+
+            <h3>Texto bidireccional</h3>
+
+            <p>
+                <bdo dir="rtl">Texto en dirección inversa.</bdo>
+            </p>
+
+            <h3>Output</h3>
+
+            <output name="resultado">
+                Resultado de ejemplo: 100
+            </output>
+
+            <h3>Template</h3>
+
+            <template id="plantilla">
+                <p>
+                    Este contenido está dentro de una plantilla HTML.
+                    No se muestra hasta que se utiliza mediante código.
+                </p>
+            </template>
+
+            <h3>Noscript</h3>
+
+            <noscript>
+                Tu navegador tiene JavaScript deshabilitado.
+            </noscript>
+
+            <h3>Canvas</h3>
+
+            <p>
+                Canvas permite dibujar gráficos mediante JavaScript.
+                Aquí se presenta el elemento, pero no se dibuja
+                porque esta guía utiliza exclusivamente HTML.
+            </p>
+
+            <canvas width="300" height="150">
+                Tu navegador no soporta canvas.
+            </canvas>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- SECCIÓN 11: ESTRUCTURA DE UN PROYECTO -->
+
+        <section>
+
+            <h2>11. Estructura básica de un proyecto HTML</h2>
+
+            <p>
+                Un proyecto web puede organizarse utilizando
+                archivos independientes para cada tecnología.
+            </p>
+
+            <pre>
+mi-proyecto/
+│
+├── index.html
+│
+├── css/
+│   └── estilos.css
+│
+├── js/
+│   └── app.js
+│
+├── images/
+│   └── logo.png
+│
+└── documents/
+    └── manual.pdf
+            </pre>
+
+            <p>
+                HTML estructura el contenido.
+                CSS controla la presentación.
+                JavaScript agrega comportamiento e interactividad.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================================== -->
+    <!-- 12. PIE DE PÁGINA -->
+    <!-- ================================================== -->
+
+    <footer>
+
+        <hr>
+
+        <h2>Fin de la guía HTML5</h2>
+
+        <p>
+            Material educativo para aprender desarrollo web.
+        </p>
+
+        <p>
+            <a href="#inicio">Volver al inicio</a>
+        </p>
+
+        <small>
+            Guía de referencia HTML5.
+            Todos los derechos reservados.
+        </small>
+
+    </footer>
+
+</body>
+
+</html>
